@@ -17,12 +17,26 @@ export const WeatherProvider = ({ children }) => {
       .catch((err) => console.error("Weather fetch error:", err));
   };
 
+  const searchLocation = (event) => {
+    if (event.key === "Enter" && location.trim()) {
+      fetchWeather(location);
+      setLocation("");
+    }
+  };
+
   useEffect(() => {
     fetchWeather("London");
   }, []);
 
   return (
-    <WeatherContext.Provider >
+    <WeatherContext.Provider
+      value={{
+        location,
+        setLocation,
+        searchLocation,
+        weatherData: data,
+      }}
+    >
       {children}
     </WeatherContext.Provider>
   );
