@@ -61,7 +61,32 @@ const Weather = () => {
             />
           </div>
 
-          
+          <div className="flex flex-col justify-evenly gap-y-2 my-4 mx-auto sm:text-xs">
+            <div className="flex justify-between gap-x-8">
+              <p>Feels Like</p>
+              <p className="font-bold w-20">
+                {weatherData.main.feels_like.toFixed()} °C
+              </p>
+            </div>
+            <div className="flex justify-between gap-x-8">
+              <p>Humidity</p>
+              <p className="font-bold w-20">
+                {weatherData.main.humidity} %
+              </p>
+            </div>
+            <div className="flex justify-between gap-x-8">
+              <p>Wind Speed</p>
+              <p className="font-bold w-20">
+                {weatherData.wind.speed.toFixed()} Kph
+              </p>
+            </div>
+            <div className="flex justify-between gap-x-8">
+              <p>Pressure</p>
+              <p className="font-bold w-20">
+                {weatherData.main.pressure} hpa
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
