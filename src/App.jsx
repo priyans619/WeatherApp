@@ -1,9 +1,15 @@
-import React from 'react'
+import Search from "./components/Search";
+import Weather from "./components/Weather";
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div className="w-screen h-screen">
+      <p className="text-3xl text-center font-semibold py-2">Welcome to Weather App</p>
+      <Search />
+      <Weather />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
