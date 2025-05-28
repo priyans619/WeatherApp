@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
 
@@ -25,6 +24,7 @@ export const WeatherProvider = ({ children }) => {
         forecastRes.data.list.filter((item) => item.dt_txt.includes("12:00:00"))
       );
       setError("");
+      localStorage.setItem("lastCity", city);
     } catch (err) {
       setError("City not found. Please try another location.");
       setData({});
@@ -39,8 +39,10 @@ export const WeatherProvider = ({ children }) => {
     }
   };
 
+  // On first load check localStorage for saved city line 27
   useEffect(() => {
-    fetchWeather("London");
+    const savedCity = localStorage.getItem("lastCity") || "London";
+    fetchWeather(savedCity);
   }, []);
 
   return (
