@@ -5,7 +5,7 @@ import Rain from "../assets/Rain.png";
 import Haze from "../assets/Haze.png";
 
 const Weather = () => {
-  const { weatherData } = useWeather();
+  const { weatherData, lastUpdated } = useWeather();
 
   const getBackgroundImage = () => {
     if (!weatherData.weather) return "";
@@ -89,6 +89,12 @@ const Weather = () => {
           </div>
         </div>
       </div>
+      
+        {lastUpdated && (
+          <p className="text-sm text-white italic">
+            Last updated at: {lastUpdated}
+          </p>
+        )}
     </div>
   );
 };
