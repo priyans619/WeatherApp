@@ -8,9 +8,9 @@ function App() {
   const { error } = useWeather(); // for error
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-sky-900 to-blue-800 text-white px-4 py-6">
+    <div className="w-full min-h-screen bg-gradient-to-br from-sky-950 to-blue-00 text-white px-4 py-6">
       <h1 className="text-3xl text-center font-semibold mb-6">
-        Welcome to Weather App
+        WEATHER APPLICATION
       </h1>
 
       <Search />
