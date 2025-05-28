@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { formatTime } from "../utils/formatTime";
 
 const WeatherContext = createContext();
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
@@ -10,6 +11,7 @@ export const WeatherProvider = ({ children }) => {
   const [forecastData, setForecastData] = useState([]);
   const [error, setError] = useState("");
   const [currentCity, setCurrentCity] = useState("");
+  const [lastUpdated, setLastUpdated] = useState("");
   const intervalRef = useRef(null); //
 
   const fetchWeather = async (city) => {
@@ -31,6 +33,7 @@ export const WeatherProvider = ({ children }) => {
       setError("");
       localStorage.setItem("lastCity", city);
       setCurrentCity(city); // Update current city afterfetch
+      setLastUpdated(formatTime(Date.now()));
     } catch (err) {
       setError("City not found. Please try another location.");
       setData({});
@@ -72,6 +75,7 @@ export const WeatherProvider = ({ children }) => {
         weatherData: data,
         forecastData,
         error,
+        lastUpdated,
       }}
     >
       {children}
