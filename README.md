@@ -1,12 +1,75 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies
+1.**React.js** (Frontend UI)
 
-Currently, two official plugins are available:
+  **ContextAPI** - State Management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+2.**API**'s:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   a) **OpenWeatherMap**
+
+3.**Libraries**:
+    
+   a) **UI Kit**- **TailwindCss**
+
+   b) **Axios** for organised API calls
+
+
+## System Requirements
+
+To get started with development, you need to install few tools
+
+1. **git** 
+   
+   `git` version 2.40.0 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
+
+2. **node** 
+
+   `node` version 17.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+
+3. **npm**
+  
+    `npm` version 10.5.0 or higher. You will have it after you install node.
+
+
+## Setup
+To set up a development environment locally, please follow these steps:
+
+1. Clone the repo
+
+   ```shell
+    git clone https://github.com/priyans619/WeatherApp
+   ```
+
+2. Change directory to the project directory
+
+    ```shell
+    cd WeatherApp
+    ```
+3. Create the variable and add API Key
+
+    ```shell
+    add .env file in root folder
+    VITE_WEATHER_API_KEY - Add this variable with API key
+    ```
+
+4. Install the dependencies
+   
+     ```shell
+     npm install / npm i
+      ```
+5. Run the app
+   
+    ```shell
+    npm run dev
+    ```
+
+ Project will be running in the browser.
+
+ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+ ## **Thank You !!**
+
+
