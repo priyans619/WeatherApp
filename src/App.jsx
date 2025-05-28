@@ -9,10 +9,7 @@ function App() {
         Welcome to Weather App
       </p>
       <Search />
-
-      {/* Responsive layout */}
       <div className="flex flex-col lg:flex-row justify-center items-start gap-2 mt-6">
-        {/* Optionally control widths for balance */}
         <div className="w-full lg:w-2/3">
           <Weather />
         </div>
