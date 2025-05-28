@@ -30,7 +30,7 @@ const Weather = () => {
 
   return (
     <div
-      className="max-w-lg sm:mx-auto bg-gradient shadow-lg rounded-md p-6 mt-8 mx-4 bg-cover bg-no-repeat"
+      className="max-w-lg sm:mx-auto bg-gradient shadow-lg rounded-md p-7 mt-8 mx-4 bg-cover bg-no-repeat"
       style={{ backgroundImage: getBackgroundImage() }}
     >
       <div className="flex justify-between w-full text-white">
