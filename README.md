@@ -3,18 +3,18 @@
 ## Technologies
 1.**React.js** (Frontend UI)
 
-  **ContextAPI** - State Management
+2.**ContextAPI** - State Management
 
 
-2.**API**'s:
+3.**API**'s :
 
    a) **OpenWeatherMap**
 
-3.**Libraries**:
+4.**Libraries** :
     
-   a) **UI Kit**- **TailwindCss**
+   a) **UI Kit** - **TailwindCss**
 
-   b) **Axios** for organised API calls
+   b) **Axios** - for organised API calls
 
 
 ## System Requirements
@@ -51,8 +51,8 @@ To set up a development environment locally, please follow these steps:
 3. Create the variable and add API Key
 
     ```shell
-    add .env file in root folder
-    VITE_WEATHER_API_KEY - Add this variable with API key
+    - Add .env file in root folder
+    - VITE_WEATHER_API_KEY - Create this variable with API key
     ```
 
 4. Install the dependencies
