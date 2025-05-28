@@ -12,7 +12,7 @@ const Search = () => {
         </div>
         <input
           type="text"
-          className="py-2 pl-10 pr-3 w-full text-lg rounded-xs
+          className="py-2 pl-10 pr-3 w-full text-lg rounded-3xl
             border border-gray-200 text-gray-600 placeholder:text-gray-400
             focus:outline-none bg-white shadow-md"
           placeholder="Enter Location"
