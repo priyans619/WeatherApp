@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-sky-950 to-blue-00 text-white px-4 py-6">
-      <h1 className="text-3xl text-center font-semibold mb-6">
+      <h1 className="text-3xl text-center text-black font-semibold mb-6">
         WEATHER APPLICATION
       </h1>
 
