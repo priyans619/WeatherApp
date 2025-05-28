@@ -2,13 +2,13 @@
 const ForecastUI = ({ forecastData }) => {
   return (
     <div className="flex justify-center">
-      <div className=" p-1 rounded-xl text-black w-full max-w-lg mt-5">
-        <h2 className="text-2xl text-white font-sans mb-6 text-center">5-Day Forecast</h2>
+      <div className=" p-1 rounded-xl text-black w-full max-w-lg mt-6">
+        <h2 className="text-2xl bg-white bg-opacity-25 rounded-md p-2 font-semibold mb-3 text-center">5-Day Forecast</h2>
         <div className="flex flex-col gap-1">
           {forecastData.map((item, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-25 px-4 flex items-center justify-between"
+              className="bg-white bg-opacity-25 rounded-md px-3 flex items-center justify-between"
             >
               <p className="font-medium w-20">
                 {new Date(item.dt_txt).toLocaleDateString("en-US", {
